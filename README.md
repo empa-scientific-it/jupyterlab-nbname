@@ -34,6 +34,24 @@ The `jlpm` command is JupyterLab's pinned version of
 [yarn](https://yarnpkg.com/) that is installed with JupyterLab. You may use
 `yarn` or `npm` in lieu of `jlpm` below.
 
+#### Using uv (recommended)
+
+```bash
+# Clone the repo to your local environment
+# Change directory to the nbname directory
+# Install JupyterLab and development dependencies
+uv add --dev "jupyterlab>=4.0.0,<5"
+# Install package in development mode
+uv run pip install -e "."
+# Link your development version of the extension with JupyterLab
+uv run jupyter labextension develop . --overwrite
+# Install JavaScript dependencies and build
+jlpm install
+jlpm build
+```
+
+#### Using pip (alternative)
+
 ```bash
 # Clone the repo to your local environment
 # Change directory to the nbname directory
@@ -50,7 +68,9 @@ You can watch the source directory and run JupyterLab at the same time in differ
 ```bash
 # Watch the source directory in one terminal, automatically rebuilding when needed
 jlpm watch
-# Run JupyterLab in another terminal
+# Run JupyterLab in another terminal (using uv if available)
+uv run jupyter lab
+# Or alternatively
 jupyter lab
 ```
 
