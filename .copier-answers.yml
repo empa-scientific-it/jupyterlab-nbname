@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.4.0
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: edoardob90@gmail.com
+author_name: Nbname
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: nbname
+project_short_description: A JupyterLab extension to retrieve the currently openend
+    notebook filename.
+python_name: nbname
+repository: ''
+test: true
+
