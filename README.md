@@ -1,7 +1,5 @@
 # nbname
 
-[![Github Actions Status](/workflows/Build/badge.svg)](/actions/workflows/build.yml)
-
 A JupyterLab extension to retrieve the currently openend notebook filename.
 
 ## Requirements
@@ -115,3 +113,4 @@ More information are provided within the [ui-tests](./ui-tests/README.md) README
 ### Packaging the extension
 
 See [RELEASE](RELEASE.md)
+
